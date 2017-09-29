@@ -23,16 +23,16 @@ window.onload=function() {
 
 
 
-            $.ajax({
-              url: url,
-              method: 'GET',
-            }).done(function(result) {
-                    searchResult = result;
-                      console.log(result);
+        $.ajax({
+          url: url,
+          method: 'GET',
+        }).done(function(result) {
+                searchResult = result;
+                  console.log(result);
 
-                }).fail(function(err) {
-                      throw err;
-                    });
+            }).fail(function(err) {
+                  throw err;
+                });
 
     });
 
